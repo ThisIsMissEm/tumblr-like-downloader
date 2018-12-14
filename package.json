@@ -1,0 +1,26 @@
+{
+  "name": "tumblr-like-downloader",
+  "version": "1.0.0",
+  "description": "Download a local archive of your Tumblr likes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./lib/cli-start.js",
+    "get-likes-data": "node ./lib/cli-download-likes.js",
+    "get-likes-media": "node ./lib/cli-download-media.js"
+  },
+  "author": "Jeremiah Lee <mass@jeremiahlee.com>",
+  "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jeremiahlee/tumblr-like-downloader.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "inquirer": "^6.2.1",
+    "oauth": "^0.9.15",
+    "tumblr.js": "^2.0.0",
+    "util": "^0.11.1"
+  }
+}
